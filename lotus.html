@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: transparent; overflow: hidden; }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+      --poster-color: transparent;
+      filter: sepia(1) saturate(3) hue-rotate(320deg) brightness(3.5) opacity(0.12);
+    }
+  </style>
+</head>
+<body>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <model-viewer
+    src="https://resonate-studios.github.io/my-assets/lotus.glb"
+    auto-rotate
+    loading="eager"
+    reveal="auto"
+    shadow-intensity="0"
+    exposure="1.2"
+    tone-mapping="neutral">
+  </model-viewer>
+</body>
+</html>
